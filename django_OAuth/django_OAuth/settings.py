@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
+    'sslserver',
 ]
 
 MIDDLEWARE = [
@@ -133,6 +134,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+LOGIN_REDIRECT_URL = '/'
+
 SITE_ID = 1
 
 SOCIALACCOUNT_PROVIDERS = {
@@ -160,4 +163,5 @@ SOCIALACCOUNT_PROVIDERS = {
         'VERIFIED_EMAIL': False,
         'VERSION': 'v2.12',
     }
+
 }
